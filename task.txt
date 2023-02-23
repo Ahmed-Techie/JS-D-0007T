@@ -29,6 +29,7 @@
         }
 
         }
+        
 /**********b. Get all the countries with a population of less than 2 lakhs using Filter function*****/
 
 var request1 = new XMLHttpRequest();
@@ -55,7 +56,6 @@ for(var l in res1) {
                                                                             
 /***********c. Print the following details name, capital, flag using forEach function**************************************************************************/
 
-
 var request2 = new XMLHttpRequest();
 request2.open("GET","https://restcountries.com/v3.1/all",true)
 request2.send()
@@ -66,9 +66,6 @@ request2.send()
     var res = result.forEach((ele)=>{console.log(`${ele.name.common} ${ele.capital} ${ele.region}`)})
     
 }
-
-
-
 
 /************d. Print the total population of countries using reduce function*********************************************************************************/
 
@@ -81,7 +78,6 @@ request3.send()
     var res = result.reduce((acc,cv)=>acc+cv.population,0)
     console.log(`Total population of countries using reduce function ${res}`);
     }
-
 
 /************e. Print the country which uses US Dollars as currency.*********************************************************************************/
         
@@ -99,7 +95,6 @@ request4.onload = function() {
             }
         }
     })
-
 }
 
 /***************************Task - End********************************************************/
