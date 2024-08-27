@@ -8,6 +8,7 @@
 
 /***********a. Get all the countries from the Asia continent /region using the Filter function******/
 
+
         var request = new XMLHttpRequest();
         request.open("GET","https://restcountries.com/v3.1/all",true)
         request.send()
